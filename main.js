@@ -44,7 +44,7 @@ cube.position.set(1,2,1);
 scene.add( cube );
 
 const spgeometry =  new THREE.SphereGeometry(1, 32, 16);
-const spmaterial = new THREE.MeshStandardMaterial({ color: 0x00ff83 });
+const spmaterial = new THREE.MeshStandardMaterial({ color: 0x00ff62 });
 const mesh = new THREE.Mesh(spgeometry, material);
 scene.add(mesh);
 
@@ -94,3 +94,4 @@ function animate() {
 
 
 }
+
