@@ -40,6 +40,7 @@ scene.add(light);
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 const material = new THREE.MeshStandardMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
+cube.position.set(1,2,1);
 scene.add( cube );
 
 const spgeometry =  new THREE.SphereGeometry(1, 32, 16);
@@ -90,5 +91,6 @@ function animate() {
   mesh.rotation.y += 0.01;
 
   renderer.render( scene, camera );
+
 
 }
