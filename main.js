@@ -38,7 +38,7 @@ const light = new THREE.DirectionalLight();
 light.position.set(0.8,1,-6);
 scene.add(light);
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshStandardMaterial( { color: 0x00ff00 } );
+const material = new THREE.MeshStandardMaterial( { color: 0xff0000 } );
 const cube = new THREE.Mesh( geometry, material );
 cube.position.set(1,2,1);
 scene.add( cube );
@@ -46,7 +46,7 @@ scene.add( cube );
 const spgeometry =  new THREE.SphereGeometry(1, 32, 16);
 const spmaterial = new THREE.MeshStandardMaterial({ color: 0x00ff62 });
 const mesh = new THREE.Mesh(spgeometry, material);
-//scene.add(mesh);
+scene.add(mesh);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -94,5 +94,6 @@ function animate() {
 
 
 }
+
 
 
