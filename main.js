@@ -46,7 +46,7 @@ scene.add( cube );
 const spgeometry =  new THREE.SphereGeometry(1, 32, 16);
 const spmaterial = new THREE.MeshStandardMaterial({ color: 0x00ff62 });
 const mesh = new THREE.Mesh(spgeometry, material);
-scene.add(mesh);
+//scene.add(mesh);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -94,4 +94,5 @@ function animate() {
 
 
 }
+
 
